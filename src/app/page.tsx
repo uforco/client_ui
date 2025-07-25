@@ -4,12 +4,12 @@ import { useEffect } from "react";
 
 export default function Home() {
   function handleLogin() {
-    window.location.href = "http://localhost:3000/auth/google";
+    window.location.href = "https://prechserver.zapto.org/auth/google";
   }
 
   const handleCookie = async () => {
     console.log("sent cookie proscee back end");
-    await fetch("http://localhost:3000/auth/me", {
+    await fetch("https://prechserver.zapto.org/auth/me", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
